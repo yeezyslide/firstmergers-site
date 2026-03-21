@@ -117,9 +117,9 @@ nav.scrolled { box-shadow: 0 2px 32px rgba(13,43,94,0.12); }
 .stat-num sup { font-size: 20px; font-weight: 300; vertical-align: super; }
 .stat-label { font-size: 14px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-top: 7px; line-height: 1.4; }
 .hero-right { position: relative; overflow: hidden; }
-.hero-right img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.5) contrast(1.08) saturate(0.9); transform: scale(1.04); animation: hzoom 22s ease-in-out infinite alternate; }
+.hero-right img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); animation: hzoom 22s ease-in-out infinite alternate; }
 @keyframes hzoom { from { transform: scale(1.04); } to { transform: scale(1.1); } }
-.hero-right-grad { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,43,94,0.4) 0%, transparent 55%); }
+.hero-right-grad { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,43,94,0.15) 0%, transparent 40%); }
 .hero-right-bar { display: none; }
 .scroll-indicator { position: absolute; bottom: 48px; left: 80px; display: flex; align-items: center; gap: 12px; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.35); }
 .scroll-line { width: 1px; height: 44px; background: rgba(255,255,255,0.15); position: relative; overflow: hidden; }
@@ -135,27 +135,6 @@ section { position: relative; }
 .section-title em { font-style: italic; color: var(--blue-mid); }
 .rule { width: 48px; height: 3px; background: var(--blue-light); margin-top: 28px; }
 
-/* TESTIMONIALS */
-#testimonials { padding: 40px 0; background: var(--off-white); overflow: hidden; }
-.ticker-track {
-  display: flex; gap: 24px; width: max-content;
-  animation: ticker 120s linear infinite;
-}
-@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-.testimonial-card {
-  background: var(--white); border: 1px solid var(--light-gray);
-  border-radius: 4px; padding: 32px; width: 400px; min-width: 400px;
-  display: flex; flex-direction: column; justify-content: space-between;
-}
-.testimonial-quote {
-  font-size: 15px; font-weight: 400; line-height: 1.75; color: #2a3f5f;
-  font-style: italic; flex-grow: 1;
-}
-.testimonial-quote::before { display: none; }
-.testimonial-attr {
-  font-size: 14px; font-weight: 600; color: var(--navy); border-top: 1px solid var(--light-gray); padding-top: 14px; margin-top: 16px;
-}
-.testimonial-attr span { display: block; font-weight: 400; color: #4a6a8a; font-size: 13px; margin-top: 2px; }
 
 /* ABOUT */
 #about { padding: 140px 0; background: var(--white); }
@@ -349,27 +328,6 @@ footer { background: #ffffff; padding: 44px 64px; display: flex; align-items: ce
   <div class="hero-wedge"></div>
 </section>
 
-<section id="testimonials">
-  <div class="ticker-track" id="tickerTrack">
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;My phone has been blowing up from bankers and buyers. When Michael contacted me, I was frankly a jerk to him, but he is the only one who made sense.&rdquo;</div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;We selected Michael for his reputation and solid references.&rdquo;</div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;A key selection criterion for us was a consultant who specialized in our industry and had credibility with both our team and prospective buyers. First Mergers Group had the experience and track record we required.&rdquo;</div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;First Mergers Group created a straightforward, comprehensive narrative to explain, document, and demonstrate more than a dozen pro forma adjustments, which were fundamental to our valuation.&rdquo;</div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;I was extremely impressed with Michael's deep industry knowledge and extensive industry network.&rdquo;</div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;From my experience, one of the hidden advantages of engaging Michael Price is his ability to take the pressure off you and your organization during negotiations. In our last transaction, Michael more than earned his fee by negotiating an extra $2.0 million in the deal just prior to closing.&rdquo;</div><div class="testimonial-attr">William Dillard<span>President &amp; Owner, MSI, Orlando, FL</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;I have worked with Michael Price as both a seller and a buyer of businesses. He does a great job representing the interests of his clients and maximizing returns. I would highly recommend Michael to represent a business for sale.&rdquo;</div><div class="testimonial-attr">Alan Barnes, Jr.<span>Aircond, Atlanta, GA</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;The thought of selling my business never occurred to me. But I felt I had nothing to lose by exploring the idea. I'm glad I did. Michael was very knowledgeable about the process and was able to protect my interests.&rdquo;</div><div class="testimonial-attr">Keith Moore<span>President &amp; Owner, Charlotte, NC</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Outstanding results from all sources. He is masterful at communicating the value of your transaction to a potential buyer and looks out for your interests at all times. He will walk away if he thinks a deal is not in your best interest. Exceptional integrity!&rdquo;</div><div class="testimonial-attr">William Dillard<span>President &amp; Owner, MSI, Orlando, FL</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Michael is a true professional with whom I have had the pleasure of working on numerous transactions. He has developed an industry reputation for creating value for his clients.&rdquo;</div><div class="testimonial-attr">Alan Mintz</div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Thank you for a job well done in guiding us through our transaction. Your deep knowledge of contracting proved extremely beneficial in identifying potential buyers. We knew we had an outstanding company, but could not have done it without you.&rdquo;</div><div class="testimonial-attr">P.E. Poole</div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;To Michael Price, with thanks for your help on the Aircond deal. I've never seen a better job by a consultant in shaping and negotiating a deal.&rdquo;</div><div class="testimonial-attr">F.T. Davis, Jr.<span>Attorney and Author of Business Acquisitions Desk Book</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Michael has high integrity, extensive knowledge, and expertise in an industry that requires those qualities. He not only has the financial expertise for complex transactions, but also the confidence and judgment to achieve a positive result.&rdquo;</div><div class="testimonial-attr">Haywood Miller<span>Capstone Advisory Group, LLC</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Just as you need the right tool for heavy industrial contracting, Michael Price is your right tool for M&amp;A. His understanding of the industry is genuine, and his ability to get a deal across the finish line is unmatched.&rdquo;</div><div class="testimonial-attr">Jason Pond<span>Greenberry Industrial</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Michael Price was the intermediary who kept emotions out of the transaction so both sides could act in an objective, businesslike manner. What impressed me most is that Michael was a man of his word.&rdquo;</div><div class="testimonial-attr">Alan Barnes, Sr.<span>President &amp; Owner, Aircond Corporation, Atlanta, GA</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Price always gets our attention with his client opportunities. His success rate of closing multiple transactions with us is high — 100%. We would much rather see a seller have representation than none.&rdquo;</div><div class="testimonial-attr">Undisclosed Buyer<span>Buyer of Contracting Companies</span></div></div>
-    <div class="testimonial-card"><div class="testimonial-quote">&ldquo;Michael is a pro at what he does. I always turn to him for advice.&rdquo;</div><div class="testimonial-attr">Phil Rogers</div></div>
-  </div>
-</section>
 
 <section id="about">
   <div class="si">
@@ -752,8 +710,6 @@ footer { background: #ffffff; padding: 44px 64px; display: flex; align-items: ce
   reveals.forEach(el => obs.observe(el));
 
   // Ticker: duplicate cards for seamless infinite loop
-  const ticker = document.getElementById("tickerTrack");
-  ticker.innerHTML += ticker.innerHTML;
 </script>
 </body>
 </html>
