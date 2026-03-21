@@ -81,7 +81,9 @@ nav.scrolled { box-shadow: 0 2px 32px rgba(13,43,94,0.12); }
 .tx-eyebrow {
   font-size: 14px; font-weight: 600; letter-spacing: 0.3em;
   text-transform: uppercase; color: var(--blue-pale); margin-bottom: 24px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
 }
+.tx-eyebrow svg { width: 18px; height: 18px; stroke: var(--blue-pale); fill: none; stroke-width: 1.5; }
 .tx-hero-title {
   font-family: "Calibri", "Barlow", sans-serif;
   font-size: clamp(36px, 4vw, 56px); font-weight: 300; line-height: 1.15;
@@ -377,7 +379,7 @@ footer {
 <!-- HERO -->
 <section class="tx-hero">
   <div class="si">
-    <div class="tx-eyebrow">Track Record</div>
+    <div class="tx-eyebrow"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke-linecap="round" stroke-linejoin="round"/></svg>Track Record</div>
     <h1 class="tx-hero-title">Transaction <em>History</em></h1>
     <p class="tx-hero-sub">115+ completed transactions since 1996 across contracting and industrial services.</p>
     <div class="stats-grid">
