@@ -317,12 +317,18 @@ footer { background: #ffffff; padding: 44px 64px; display: flex; align-items: ce
   .mobile-menu { display: flex; }
   .sectors-grid, .tx-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; }
-  .hero-left { padding: 120px 20px 60px; }
-  .hero-stats { flex-wrap: wrap; gap: 20px; }
-  .stat-num { font-size: 36px; }
-  .stat-label { font-size: 12px; }
-  .hero-headline { font-size: 28px; }
-  .hero-sub, .hero-sub2 { font-size: 14px; }
+  .hero { height: auto; min-height: 0; max-height: none; overflow: visible; }
+  .hero-left { padding: 100px 20px 48px; overflow: visible; }
+  .hero-right { height: 300px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 32px; margin-top: 24px; }
+  .stat-num { font-size: 28px; }
+  .stat-num sup { font-size: 14px; }
+  .stat-label { font-size: 11px; letter-spacing: 0.06em; }
+  .hero-headline { font-size: 26px; margin-bottom: 20px; }
+  .hero-sub { font-size: 14px; margin-bottom: 10px; }
+  .hero-sub2 { font-size: 13px; margin-bottom: 32px; }
+  .hero-eyebrow { font-size: 12px; margin-bottom: 20px; }
+  .scroll-indicator { display: none; }
 }
 </style>
 </head>
